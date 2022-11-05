@@ -1,172 +1,20 @@
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>aboutme</title>
-
-        <link rel="icon" type="image/x-icon" href="favicon.ico" />
-        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
-
-        <link href="fonts.css" rel="stylesheet" />
-        <link rel="stylesheet" href="style.css">
-        
-
-
-    </head>
-    <body id="page-top">
-
-        <nav class="navbarrrr">
-            <ul>
-              <li>
-                <a href="">Home</a>
-              </li>
-              <li>
-                <a href="#games">Games</a>
-              </li>
-              <li>
-                <a href="#about">About</a>
-              </li>
-              <li>
-                <a href="#contact">Contact</a>
-              </li>
-            </ul>
-          </nav>
-          
-        <header class="masthead bg-primary text-white text-center">
-            <div class="container d-flex align-items-center flex-column">
-                
-                   <img onmouseover="setNewImage()" onmouseout="setOldImage()" style="width: 25vh;" id="face1" src="face.png" alt="..." /> <br><br>
-                
-                <h1 style="color: black;" class="masthead-heading text-uppercase mb-0">Ismaël Lamgadar</h1>
-                <p style="color: black;" class="masthead-subheading font-weight-light mb-0">computer scientist</p>
-            </div>
-        </header>
-        <!-- Portfolio-->
-        <section class="page-section portfolio" id="portfolio">
-            <div class="container">
-
-                <h2 id="games" class="page-section-heading text-center text-uppercase text-secondary mb-0">Games</h2>
-            
-
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-
-                <div class="row justify-content-center">
-
-
-                    <div class="col-md-6 col-lg-4 mb-5">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <img width="500" height="315" src="gamePortfolio3.jpg" alt="">
-                                
-                            </div>
-                            <div style="text-align: center;">
-                            <a href="game.html"><button style="border-radius: 24px; background-color: #303c54; height: 3vh;" type="submit"><p style="color: #bde0fe;">PLAY</p></button></a>
-                            </div>
-
-                    </div>                  
-        </section>
-        
-        <section class="page-section bg-primary text-white mb-0" id="about">
-            <div class="container">
-                <h2 id="about" style="color: black;" class="page-section-heading text-center text-uppercase">About</h2>
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <div style="text-align: center;">
-                    <video width="700" controls>
-                        <source src="ismaelLamgadar.mp4" type="video/mp4"/>
-                      </video>
-                </div>
-            </div>
-        </section>
-
-        <section class="page-section" id="contact">
-            <div class="container">
-
-                <h2 id="contact" class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
-
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 col-xl-7">
-
-                        <form action="https://formspree.io/f/xgedlqby" method="post">
-
-                            <div class="form-floating mb-3">
-                                <input name="name" class="form-control" id="name" type="text" placeholder="Enter your name..."  />
-                                <label for="name">Full name</label>
-                            </div>
-
-                            <div class="form-floating mb-3">
-                                <input name="email" class="form-control" id="email" type="email" placeholder="name@example.com"  />
-                                <label for="email">Email address</label>
-                            </div>
-
-                            <div class="form-floating mb-3">
-                                <input name="phonenumber" class="form-control" id="phone" type="tel" placeholder="(123) 456-7890"  />
-                                <label for="phone">Phone number</label>
-                            </div>
-
-                            <div class="form-floating mb-3">
-                                <textarea name="message" class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" ></textarea>
-                                <label for="message">Message</label>
-                            </div>
-              
-              <div style="text-align: center;">
-            <a href="/lander.html"><button name="submit" style="border-radius: 24px; color: #383c54;" type="submit">Login</button></a>  
-            </div>
-                            
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Footer-->
-        <footer class="footer text-center">
-            <div class="container">
-                <div class="row">
-                    <!-- Footer Location-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Location</h4>
-                        <p class="lead mb-0">
-                            nowhere
-                            <br />
-                            idk
-                        </p>
-                    </div>
-                    <!-- Footer Social Icons-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Around the Web</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
-                    </div>
-                    <!-- Footer About Text-->
-                    <div class="col-lg-4">
-                        <h4 class="text-uppercase mb-4">About me</h4>
-                        
-                        <p class="lead mb-0">
-                            this is my website
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright &copy; mywebsite</small></div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class='homepage'>
+        <div class="titlediv">
+          <p class='title'>Ismaël Lamgadar</p>
         </div>
-        <script src="script.js"></script>
-    </body>
+        <div class="text-box">
+          <a href='https://ismaellamgadar.github.io/spline'><button class="button-53">Explore!</button></a>
+        </div>
+    </div>
+</body>
 </html>
