@@ -1,5 +1,5 @@
 import HomePage from './Components/HomePage';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {Route, BrowserRouter, Routes } from "react-router-dom";
 import Spline from './Components/Spline';
 
 export default function App() {
