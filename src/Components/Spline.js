@@ -1,10 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../styles.css'
+import Spline from '@splinetool/react-spline';
+import { PacmanLoader } from 'react-spinners';
+import { Backdrop, CircularProgress } from '@mui/material';
 
-function Spline() {
+
+
+function SplineComponent() {
+  const [loaded, setLoaded] = useState(false)
+  const setLoadTrue = () => {
+  setLoaded(true);
+}
   return (
-    <iframe src='https://my.spline.design/carcampingphysicscopy-a6d6a23161ee1accccbcdd3093f66826/' frameborder='0' width='100%' height='100%'></iframe>
+    <>
+      <Spline onLoad={setLoadTrue} scene="https://prod.spline.design/vK547L8bXFKg6EyQ/scene.splinecode" />
+      <Backdrop
+      sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
+      open={!loaded}
+    >
+      <CircularProgress  color='inherit' />
+    </Backdrop>
+</>
   )
 }
 
-export default Spline
+export default SplineComponent

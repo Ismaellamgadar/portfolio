@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import "../styles.css"
-import Spline from './Spline'
+import SplineComponent from './Spline'
 
 function HomePage() {
   const pages = ['homepage', 'spline']
@@ -22,7 +22,7 @@ function HomePage() {
     </div>
     )}
     {selectedPage === pages[1] && (
-      <Spline />
+      <SplineComponent />
     )}
     </>
   )
